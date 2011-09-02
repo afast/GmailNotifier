@@ -1,0 +1,9 @@
+Simple python script that checks through imap and displays a notification.
+The notification displays the sender, the subject and the first words of any text part the email may contain.
+Also it changes the images if there are unseen emails.
+
+It uses ezPyCrypto to decrypt the email and password using public/private keys. So as to not store the email and password in plain text.
+
+There will be a script to generate your own private/public keys and another to create the email/password files with those keys.
+
+Any questions, please ask.
