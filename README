@@ -5,6 +5,8 @@ There have to be images called "normal.png" and "new.png" for the two status's i
 
 It uses ezPyCrypto to decrypt the email and password using public/private keys. So as to not store the email and password in plain text.
 Download from http://www.freenet.org.nz/ezPyCrypto/ It explains also how to install
+I had some problems with the IDEA and RC5 Ciphers not being present.
+Download from http://www.4shared.com/file/1ToL6wqJ/ezPyCrypto-011tar.html to avoid that problem
 
 Setup
 Run "python create_keys.py" to generate the private and public keys.
