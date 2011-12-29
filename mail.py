@@ -35,6 +35,7 @@ class CheckGMail:
         fd=open(directory+"/pwd", "rb")
         self.pwd= k.decString(fd.read())
         fd.close()
+	pynotify.init("CheckGmail")
 
     def menu_setup(self):
         self.menu = gtk.Menu()
