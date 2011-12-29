@@ -1,14 +1,22 @@
+Gmail Notifier
+==============
+
 Simple python script that checks through imap and displays a notification. Currently tested only on ubuntu 11.04 Unity desktop.
 The notification displays the sender, the subject and the first words of any text part the email may contain.
 Also it changes the images if there are unseen emails.
 There have to be images called "normal.png" and "new.png" for the two status's in the same directory as mail.py. Be careful with the size, they should be around 16x16 pixels. (Sample images are provided)
+
+Third-Party
+-----------
 
 It uses ezPyCrypto to decrypt the email and password using public/private keys. So as to not store the email and password in plain text.
 Download from http://www.freenet.org.nz/ezPyCrypto/ It explains also how to install
 I had some problems with the IDEA and RC5 Ciphers not being present.
 Download from http://www.4shared.com/file/1ToL6wqJ/ezPyCrypto-011tar.html to avoid that problem
 
-# Setup #
+Setup
+-----
+
 Run "python create_keys.py" to generate the private and public keys.
 Run "python encrypt_info.py <email> <password>" to encode email and password.
 
@@ -20,7 +28,9 @@ There should be 4 new files now:
 
 The last three files are vital for mail.py to work properly and must be in the same directory.
 
-## Running the notifier ##
+Running the notifier
+--------------------
+
 1.  python mail.py
 2.  ./mail.py
 3.  Double clicking the file and selecting run should work too, if the allow executing file as program is selected.
